@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment</title>
+    <link rel="shortcut icon" href="https://www.netmeds.com/assets/gloryweb/favicon.png" type="image/png"/>
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../cart&checkout/payment.css" />
+    <script src="https://kit.fontawesome.com/5fa36d54c1.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav id="main_navbar"></nav>
+    <div class="cartMain">
+      <div class="cartLeft">
+        <div>
+          <img
+            src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1664557219_569x90dagsg.jpg"
+            alt="img"
+            id="img1"
+          />
+        </div>
+        <div class="productsDiv">
+          <h4 class="product">NET BANKING &nbsp;&nbsp;&nbsp;<span id="Unavailable">(Currently Unavailable)</span></h4>
+          <div class="logo">
+            <div class="imgLogo">
+              <img
+                src="https://www.netmeds.com/assets/pgicon/axis.png"
+                alt="axix"
+              />
+              <p>Axis Bank</p>
+            </div>
+            <div class="imgLogo">
+              <img
+                src="https://www.netmeds.com/assets/pgicon/Hdfc.png"
+                alt="hdfc"
+              />
+              <p>HDFC Bank</p>
+            </div>
+            <div class="imgLogo">
+              <img
+                src="https://www.netmeds.com/assets/pgicon/icici.png"
+                alt="icici"
+              />
+              <p>ICICI Netbanking</p>
+            </div>
+            <div class="imgLogo">
+              <img
+                src="https://www.netmeds.com/assets/pgicon/kotak.png"
+                alt="kotak"
+              />
+              <p>Kotak Bank</p>
+            </div>
+            <div class="imgLogo">
+              <img
+                src="https://www.netmeds.com/assets/pgicon/Sbi.png"
+                alt="sbi"
+              />
+              <p>State Bank of India</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="productsDiv">
+          <h4 class="product">PREFERED PAYMENT</h4>
+          <div class="logo2">
+            <div class="div1">
+              <img
+                src="https://www.netmeds.com/assets/pgicon/Paytm_lo.png"
+                alt="paytm"
+              />
+              <p>Paytm &nbsp;&nbsp;&nbsp; <span id="Unavailable">(Currently Unavailable)</span></p>
+            </div>
+            <div class="div2">LINK</div>
+          </div>
+        </div>
+
+        <div class="productsDiv">
+          <h4 class="product">UPI</h4>
+          <div class="logo2">
+            <div class="div1">
+              <img
+                src="https://www.netmeds.com/assets/pgicon/Phone_Pay_lo.png"
+                alt="phonepay"
+              />
+              <p>PhonePe</p>
+            </div>
+            <div class="radio">
+              <input id="radio" type="radio" />
+            </div>
+          </div>
+          <div class="button">
+            <button id="payBtn">Pay</button>
+          </div>
+        </div>
+
+        <div class="productsDiv">
+          <h4 class="product">COD</h4>
+          <div class="logo2">
+            <div class="div1">
+              <img
+                src="https://www.netmeds.com/assets/pgicon/COD.png"
+                alt="cod"
+              />
+              <div>
+                <p>Cash on Delivery &nbsp;&nbsp;&nbsp; <span id="Unavailable">(Available on order below &#x20B9;200)</span></p>
+                <p id="cod">
+                  Hear us out! Pay online and earn 50% NMS SuperCash (up to Rs.
+                  3000) on all prepaid orders
+                </p>
+              </div>
+            </div>
+            <div class="radio">
+              <input id="radio_cod" type="radio"  disabled/>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cartRight">
+        <div class="paymentDetails">
+          <p class="cartPDetails">PAYMENT DETAILS</p>
+
+          <div class="pDiv">
+            <p>MRP Total</p>
+            <p id="Carttotal">1299</p>
+          </div>
+          <div class="pDiv">
+            <p>Netmeds Discount</p>
+            <p id="cartDis">-Rs.0</p>
+          </div>
+          <div class="pDiv">
+            <p id="ttt">Total Amount *</p>
+            <p id="finalTotal">Rs.1299</p>
+          </div>
+
+          <div class="totalSaving">
+            <p id="saving">TOTAL SAVINGS RS.370.80</p>
+          </div>
+        </div>
+        <p id="notes">
+          Netmeds is a technology platform to facilitate transaction of
+          business. The products and services are offered for sale by the
+          sellers. The user authorizes the delivery personnel to be his agent
+          for delivery of the goods. For details read
+          <span>Terms & Conditions.</span>
+        </p>
+      </div>
+    </div>
+
+    <div id="popup_box">
+      <div class="phonePay">
+        <h1>PhonePay</h1>
+        <p id="generate"></p>
+        <input
+          type="number"
+          name=""
+          id="upiId"
+          placeholder="Eneter upi pin"
+        /><br />
+        <button id="pay">Pay</button>
+        <button id="ccc">CANCEL</button>
+      </div>
+    </div>
+  </body>
+</html>
+<script type="module" src="../cart&checkout/payment.js"></script>

@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="shortcut icon" href="https://www.netmeds.com/assets/gloryweb/favicon.png" type="image/png"/>
+    <!-- <link rel="shortcut icon" href="https://www.netmeds.com/assets/gloryweb/favicon.png" type="image/png"/> -->
+    <script src="https://kit.fontawesome.com/5fa36d54c1.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="../styles/navbar.css" /> -->
+    <link rel="stylesheet" href="../index.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+.Lower_section , .res_cat_list , .res_search{
+  display: none;
+}
+.profile_container{
+  /* border: 1px solid red; */
+    margin: 0px;
+    box-sizing: border-box;
+    margin-top: 50px;
+    font-family: Lato;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.inner_container > h1 {
+    color: #151B39;
+    font-size: 24px;
+    line-height: 28px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+
+.profile_firstSection , .profile_nav_section{
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    grid-column-gap:3%;
+    /* border: 1px solid red; */
+  }
+
+.profile_firstSection > div {
+    border-radius: 6px;
+    background-color: white;
+    /* border: 1px solid blue; */
+}
+.profile_items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.profile_items:hover{
+    scale: 1.2;
+}
+.profile_items > img {
+    width: 45px;
+    padding-bottom: 7%;
+}
+.profile_items > span {
+    font-size: 12px;
+    line-height: 20px;
+    /* border: 1px solid red; */
+
+}
+.profile_firstSection > div:last-of-type{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px 10%;
+}
+
+.user_detail_section{
+    display: flex;
+}
+
+.user_detail_section > div:first-of-type{
+    padding: 20px;
+    padding-bottom: 20%;
+    /* border: 1px solid red; */
+}
+
+.user_detail_section > div:first-of-type > img {
+    width: 50px;
+    padding-top: 5%;
+}
+.profile_details > h1{
+    font-size: 24px;
+    line-height: 28px;
+    color: #151B39;
+    margin-top: 15%;
+}
+.profile_details > p {
+    font-size: 12px;
+    line-height: 16px;
+    color: #7c7c7c;
+    margin-top: 3%;
+}
+
+.profile_nav_section{
+    margin-top: 2%;
+    
+}
+
+
+.profile_nav_section > div{
+    background-color: white;
+    border-radius: 6px;
+}
+
+.other_second{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 3%;
+    max-height: 270px;
+}
+
+.other_second > div {
+    width: 45%;
+    padding-bottom: 3%;
+}
+
+.other_second  h5 {
+    color: rgb(118, 117, 117);
+    margin-top: 3%;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    padding-bottom: 3%;
+}
+
+.profile_email > p{
+    margin-top: 0px;
+    color: rgb(6, 191, 191);
+    font-size: 11px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+.profile_email > div > p{
+    border-bottom: 2px solid rgb(244, 243, 243);
+    padding-bottom: 2%;
+    margin-left: 1%;
+}
+
+#modify_btn{
+    padding: 12px 40px;
+    background-color: #eee;
+    border: none;
+    border-radius: 3px;
+    display: flex;
+    float: right;
+    margin-right: 5%;
+    color: rgb(235, 59, 59);
+    margin-top: 10%;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+}
+
+.profile_list_options{
+    padding: 8% 4%;
+}
+
+.profile_list_options > div {
+    width: 100%;
+    margin-top: 1%;
+}
+.profile_list_items{
+    display: flex;
+    padding: 5px;
+    text-align: center;
+    align-items: center;
+    transition: 0.4s;
+}
+.profile_list_items:hover{
+    cursor: pointer;
+    scale: 1.06;
+}
+.profile_list_items:hover .check p{
+    font-weight: 600;
+}
+
+.profile_list_items > div {
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5%;
+}
+.w20{
+ width: 30px;
+ border-radius:50%;
+ padding: 5px;
+ background-color:#eee;
+}
+.w30{
+    width: 35px;
+}
+.check{
+    border-bottom: 2.5px solid rgb(241, 238, 238);
+    width: 80%;
+    margin: auto;
+}
+.check > p {
+    margin-left: 10px;
+    font-size: 14px;
+}
+.check > img {
+    float: right;
+    margin-right: 4%;
+    width: 4%;
+}
+
+#popup{
+    font-family: Lato;
+    z-index: 100;
+    background-color: #fff;
+    padding: 15px 20px;
+    width: 30%;
+    border-radius: 10px;
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    transform: translate(-50% , -50%) scale(0.1);
+    visibility: hidden;
+    transition: top 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.open-popup{
+   background-color: red;
+
+}
+
+.popup_input > p {
+    color: rgb(6, 191, 191);
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 24px;
+}
+.popup_input  input , select , option{
+    padding: 5px;
+    border: none;
+    margin-top: -15px;
+    border-bottom: 2px solid rgb(244, 243, 243);
+    outline: none;
+    width: 95%;
+}
+#check2{
+    width: 100%;
+    height: 120%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 99;
+    display: none;
+}
+
+#save_changes{
+    padding: 10px;
+    width: 100%;
+    margin-top: 7%;
+    margin-bottom: 5%;
+    border: none;
+    background-color: rgb(6, 191, 191);
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+}
+
+@media (max-width:870px) {
+
+    .profile_firstSection , .profile_nav_section{
+        grid-template-columns:1fr;
+        grid-row-gap:10% ;
+    }
+
+    .profile_details > h1{
+        font-size: 30px;
+    }
+    .profile_details > p {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .user_detail_section > div:first-of-type > img {
+        width: 60px;
+    }
+
+    .user_detail_section > div:first-of-type{
+        padding: 20px;
+        padding-bottom: 5%;
+    }
+
+    .profile_container{
+        padding-left:5%;
+        padding-right: 5%;
+    }
+    .other_second{
+        display: none;
+    }
+    .profile_items span{
+        text-align: center;
+    }
+}
+
+    </style>
+  </head>
+  <body>
+    <nav id="main_navbar"></nav>
+
+    <div class="profile_container">
+      <div class="inner_container">
+        <h1>Your Account</h1>
+
+        <div class="profile_firstSection">
+          <div class="user_detail_section">
+            <div>
+              <img
+                src="https://www.netmeds.com/msassets/images/icons/profile-icon.svg"
+                alt="not found"
+              />
+            </div>
+            <div class="profile_details">
+              <h1 id="update_fullname1">Anshu Raj</h1>
+              <p style="font-style: italic" id="updated_id">
+                fakereal477@gmail.com
+              </p>
+              <p>+91- <span id="modify_num3"></span></p>
+            </div>
+          </div>
+          <div>
+            <div class="profile_items">
+              <img
+                src="https://www.netmeds.com/msassets/images/icons/payment_history.svg"
+                alt="Not Found"
+              />
+              <span>Payment Methods</span>
+            </div>
+            <div class="profile_items" id="orders_section">
+              <img
+                src="https://www.netmeds.com/msassets/images/icons/medicine_orders.svg"
+                alt="Not Found"
+              />
+              <span>Medicine Orders</span>
+            </div>
+            <div class="profile_items">
+              <img
+                src="https://www.netmeds.com/msassets/images/icons/rewards.svg"
+                alt="Not Found"
+              />
+              <span>My Rewards</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="profile_nav_section">
+          <div class="profile_list_options">
+            <div class="profile_list_items">
+              <img
+                class="w30"
+                src="https://www.netmeds.com/msassets/images/icons/profile-icon.svg"
+                alt="not found"
+              />
+              <div class="check">
+                <p>Account Information</p>
+                <img
+                  src="https://www.netmeds.com/msassets/images/icons/keyboard_arrow_big_right.svg"
+                  alt="not found"
+                />
+              </div>
+            </div>
+
+            <div class="profile_list_items" id="profile_wallet">
+              <img
+                class="w30"
+                src="https://www.netmeds.com/msassets/images/icons/wallet_grey.svg"
+                alt="not found"
+              />
+              <div class="check">
+                <p>My Wallet</p>
+                <img
+                  src="https://www.netmeds.com/msassets/images/icons/keyboard_arrow_big_right.svg"
+                  alt="not found"
+                />
+              </div>
+            </div>
+
+            <div class="profile_list_items">
+              <img
+                class="w20"
+                src="https://www.netmeds.com/msassets/images/icons/favorite.svg"
+                alt="not found"
+              />
+              <div class="check">
+                <p>My WishList</p>
+                <img
+                  src="https://www.netmeds.com/msassets/images/icons/keyboard_arrow_big_right.svg"
+                  alt="not found"
+                />
+              </div>
+            </div>
+
+            <div class="profile_list_items">
+              <img
+                class="w20"
+                src="https://www.netmeds.com/msassets/images/icons/offer_inactive.svg"
+                alt="not found"
+              />
+              <div class="check">
+                <p>Offers</p>
+                <img
+                  src="https://www.netmeds.com/msassets/images/icons/keyboard_arrow_big_right.svg"
+                  alt="not found"
+                />
+              </div>
+            </div>
+
+            <div class="profile_list_items">
+              <img
+                class="w20"
+                src="https://www.netmeds.com/msassets/images/icons/delivery_inactive.svg"
+                alt="not found"
+              />
+              <div class="check">
+                <p>Delivery Address</p>
+                <img
+                  src="https://www.netmeds.com/msassets/images/icons/keyboard_arrow_big_right.svg"
+                  alt="not found"
+                />
+              </div>
+            </div>
+
+            <div class="profile_list_items" id="logout_data">
+              <img
+                class="w20"
+                src="https://www.netmeds.com/msassets/images/icons/lock_grey.svg"
+                alt="not found"
+              />
+              <div class="check" style="border: none">
+                <p>Logout</p>
+                <img
+                  src="https://www.netmeds.com/msassets/images/icons/keyboard_arrow_big_right.svg"
+                  alt="not found"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="other_second">
+            <div>
+              <h5>LOGIN INFORMATION</h5>
+
+              <div class="profile_email">
+                <p>EMAIL</p>
+                <div><p id="updated_email">fakereal477@gmail.com</p></div>
+              </div>
+              <div class="profile_email" style="margin-top: 10%">
+                <p>MOBILE NUMBER</p>
+                <div><p>+91 - <span id="modify_num2"></span></p></div>
+              </div>
+            </div>
+            <div>
+              <h5>PERSONAL INFORMATION</h5>
+
+              <div class="profile_email">
+                <p>FULL NAME</p>
+                <div><p id="update_fullname">Anshu Raj</p></div>
+              </div>
+              <div class="profile_email" style="margin-top: 10%">
+                <p>GENDER</p>
+                <div><p id="no_data">No Data</p></div>
+              </div>
+
+              <button id="modify_btn">Modify</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="popup" class="none">
+      <h5>EDIT PROFILE</h5>
+
+      <div class="popup_input">
+        <p>FIRST NAME</p>
+        <input type="text" id="popup_fname" />
+      </div>
+
+      <div class="popup_input">
+        <p>LAST NAME</p>
+        <input type="text" id="popup_lname" />
+      </div>
+
+      <div class="popup_input">
+        <p>EMAIL</p>
+        <input type="email" id="popup_email" />
+      </div>
+
+      <div class="popup_input">
+        <p>NUMBER</p>
+        <input type="text" id="number" disabled />
+      </div>
+
+      <div class="popup_input">
+        <p>GENDER</p>
+        <select id="popup_gender">
+          <option>--Select--</option>
+          <option>Male</option>
+          <option>Female</option>
+        </select>
+      </div>
+
+      <button id="save_changes">SAVE CHANGES</button>
+    </div>
+
+    <div id="check2"></div>
+
+    <!-- <script type="module" src="profile.js"></script> -->
+  </body>
+</html>
+<script>
+  document.getElementById("orders_section").addEventListener("click" , ()=>{
+    window.location.href = "order_history.html";
+  })
+</script>
+<script type="module">
+// import navbar from "../scripts/navbar.js";
+
+import * as comp from "../components/navbar.js"
+
+document.getElementById("main_navbar").innerHTML = comp.mainNavbar();
+
+
+
+document.getElementById("search_bar").addEventListener("keypress" , ()=>{
+    if(event.key == "Enter") {
+        localStorage.setItem("search" , document.getElementById("search_bar").value);
+        window.location.href = "SearchedPage/search.html"
+    }
+});
+
+document.getElementById("search_bar").addEventListener("input" , ()=>{
+    
+    let search_key = document.getElementById("search_bar").value;
+
+    if(search_key == '') {
+        document.getElementById("debounce_search_results").style.display = "none";
+    }
+    getSearchData(search_key);
+
+    if(search_key.length == '') {
+        document.getElementById("debounce_search_results").style.display = "none";
+    }else {
+        document.getElementById("debounce_search_results").style.display = "block";
+    }
+})
+
+
+async function getSearchData(user_key) {
+
+    document.getElementById("search_append").innerHTML = "";
+
+
+    let res = await fetch("https://mr-raaz.github.io/NetmedsClone_data/data.json");
+    let data = await res.json();
+
+    let search_results  = data.products;
+
+    search_results.map((elem)=>{
+        let prod_name = elem.prod_name;
+        let str = prod_name.toLowerCase();
+        let search_val = user_key.toLowerCase();
+
+        if(str.includes(search_val)){
+            let li = document.createElement("li");
+            li.innerText = prod_name;
+
+            li.addEventListener("click" , ()=>{
+                localStorage.setItem("clicked" , JSON.stringify(elem));
+                window.location.href = "Product_Description_page/productDetails.html";
+            })
+
+            document.getElementById("search_append").append(li);
+        }
+    });
+}
+
+
+document.getElementById("logout_data").addEventListener("click" , ()=>{
+  localStorage.setItem("login_status" , false);
+  window.location.href = "../index.html";
+})
+  let see = document.getElementById("popup");
+  let name = document.getElementById("popup_fname");
+  let name2 = document.getElementById("popup_lname");
+  let email2 = document.getElementById("popup_email");
+
+  let local_storage_name =localStorage.getItem("user_fname") +" " +localStorage.getItem("user_lname");
+  let local_storage_email = localStorage.getItem("user_email");
+  let local_storage_num = localStorage.getItem("user_number");
+
+  document.getElementById("modify_num2").innerText = local_storage_num;
+  document.getElementById("modify_num3").innerText = local_storage_num;
+
+  document.getElementById("update_fullname1").innerText = `${local_storage_name}`;
+  document.getElementById("update_fullname").innerText = `${local_storage_name}`;
+  document.getElementById("updated_email").innerText = `${local_storage_email}`;
+  document.getElementById("updated_id").innerText = `${local_storage_email}`;
+
+  function openPopup() {
+    document.getElementById("check2").style.display = "block";
+    see.style.visibility = "visible";
+    see.style.transform = `scale(1)`;
+    see.style.top = "20%";
+    name.value = "Anshu";
+    name2.value = "Raj";
+    email2.value = "fakereal477@gmail.com";
+  }
+
+
+  document.getElementById("modify_btn").addEventListener("click" , openPopup);
+
+
+  function closePopup() {
+    document.getElementById("check2").style.display = "none";
+    see.style.visibility = "hidden";
+    see.style.transform = `scale(0.1)`;
+    see.style.top = "10%";
+
+    let popup_name_field = name.value;
+    let name22 = name2.value;
+    let email22 = email2.value;
+    let gender = document.getElementById("popup_gender").value;
+
+    document.getElementById("update_fullname").innerText = `${
+      popup_name_field + " " + name22
+    }`;
+    document.getElementById("update_fullname1").innerText = `${
+      popup_name_field + " " + name22
+    }`;
+
+    if (gender.length > 3 && gender.length < 7) {
+      localStorage.setItem("gender", gender);
+      document.getElementById("no_data").innerText = `${gender}`;
+    }
+
+    if (popup_name_field.length != 0) {
+      localStorage.setItem("user_fname", popup_name_field);
+    }
+
+    if (name22.length != 0) {
+      localStorage.setItem("user_lname", name22);
+    }
+    if (email22.length != 0) {
+      document.getElementById("updated_email").innerText = `${email22}`;
+      document.getElementById("updated_id").innerText = `${email22}`;
+      localStorage.setItem("user_email", email22);
+    }
+
+    window.location.reload();
+  }
+
+  document.getElementById("save_changes").addEventListener("click" , closePopup);
+  
+</script>

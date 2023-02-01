@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Status</title>
+    <link rel="shortcut icon" href="https://www.netmeds.com/assets/gloryweb/favicon.png" type="image/png"/>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .order_paced_container{
+            margin-top: -10px;
+            display: flex;
+            justify-content: center;
+            height: 110vh;
+            width: 100%;
+        }
+        .Lower_section , .res_cat_list , .res_search{
+  display: none;
+}
+        iframe{
+            width: 100%;
+            border: none;
+            overflow: none;
+        }
+        h1{
+            position: absolute;
+            top: 170px;
+            left: 490px;
+            color: rgb(3, 182, 182);
+            text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main_navbar"></div>
+
+<h1 id="process_order">Processing Your Order.....</h1>
+    <div class="order_paced_container">
+        <iframe src="https://embed.lottiefiles.com/animation/72243" ></iframe>
+    </div>
+
+</body>
+</html>
+<script>
+    
+    setTimeout(()=>{
+        document.getElementById("process_order").innerText = "Order Placed Successfully";
+        document.getElementById("process_order").style.marginLeft = "-40px";
+    },3000);
+    setTimeout(()=>{
+        window.location.href = "index.html";
+    },4000);
+
+</script>
+
+<script type="module">
+
+import * as comp from "./components/navbar.js";
+
+document.getElementById("main_navbar").innerHTML = comp.mainNavbar();
+
+
+
+</script>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>checkout</title>
+    <link rel="shortcut icon" href="https://www.netmeds.com/assets/gloryweb/favicon.png" type="image/png"/>
+    <!-- <link rel="stylesheet" href="../styles/navbar.css" /> -->
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../cart&checkout/checkout.css" />
+    <script src="https://kit.fontawesome.com/5fa36d54c1.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav id="main_navbar"></nav>
+    <div class="cartMain">
+      <div class="cartLeft">
+        <img
+          src="https://www.netmeds.com/images/cms/aw_rbslider/slides/1664557219_569x90dagsg.jpg"
+          alt="img"
+          id="img1"
+        />
+        <div class="productsDiv">
+          <h4 class="product">PRODUCTS</h4>
+        </div>
+
+        <div class="address">
+          <div class="cartAd">
+            <p>DELIVERY ADDRESS</p>
+            <p id="selectAd">ADD ADDRESS</p>
+          </div>
+        </div>
+      </div>
+      <div class="cartRight">
+        <div class="paymentDetails">
+          <p class="cartPDetails">PAYMENT DETAILS</p>
+
+          <div class="pDiv">
+            <p>MRP Total</p>
+            <p id="Carttotal">1299</p>
+          </div>
+          <div class="pDiv">
+            <p>Netmeds Discount</p>
+            <p id="cartDis">-Rs.0</p>
+          </div>
+          <div class="pDiv">
+            <p id="ttt">Total Amount *</p>
+            <p id="finalTotal">Rs.1299</p>
+          </div>
+
+          <div class="totalSaving">
+            <p id="saving">TOTAL SAVINGS RS.370.80</p>
+          </div>
+
+          <div class="totalCartFinalPrice">
+            <div class="tLeft">
+              <p>TOTAL AMOUNT</p>
+              <h1 id="grandTotal">Rs.1,327.20</h1>
+            </div>
+            <div class="tRight">
+              <button id="proceed">PAY</button>
+            </div>
+          </div>
+        </div>
+        <p id="notes">
+          Netmeds is a technology platform to facilitate transaction of
+          business. The products and services are offered for sale by the
+          sellers. The user authorizes the delivery personnel to be his agent
+          for delivery of the goods. For details read
+          <span>Terms & Conditions.</span>
+        </p>
+      </div>
+    </div>
+
+    <div id="popup_box">
+      <h2>Add Address</h2>
+
+      <form id="form" aria-required="true">
+        <input
+          type="number"
+          placeholder="Pincode"
+          name=""
+          id="pincode"
+          required
+        /><br />
+        <input type="text" placeholder="City" name="" id="city" required />
+        <input
+          type="text"
+          placeholder="State"
+          name=""
+          id="state"
+          required
+        /><br />
+        <input
+          type="text"
+          placeholder="First name"
+          name=""
+          id="firstName"
+          required
+        /><br />
+        <input
+          type="text"
+          placeholder="Last name"
+          name=""
+          id="lastName"
+          required
+        /><br />
+        <input
+          type="text"
+          placeholder="Address"
+          name=""
+          id="address"
+          required
+        /><br />
+        <input type="text" placeholder="Landmark" name="" id="landmark" /><br />
+        <input
+          type="number"
+          placeholder="Mobile no."
+          name=""
+          id="phone"
+          required
+        />
+      </form>
+
+      <div id="addFlex">
+        <button id="cancel">CANCEL</button>
+        <button id="add">ADD</button>
+      </div>
+    </div>
+  </body>
+</html>
+<script type="module" src="../cart&checkout/checkout.js"></script>

@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Lato;
+}
+.Lower_section , .res_cat_list , .res_search{
+  display: none;
+}
+body {
+  background-color: #f6f6f7;
+}
+
+.cartMain {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 70px;
+  padding: 16px 0;
+}
+
+.cartRight {
+  min-width: 250px;
+  max-width: 300px;
+}
+
+.cartLeft h1 {
+  font-family: Lato, bold;
+  font-size: 24px;
+  padding: 24px;
+  color: #151b39;
+  font-weight: 600;
+}
+
+#img1 {
+  border-radius: 4px;
+  width: 100%;
+  height: 105px;
+}
+
+.product {
+  padding: 16px 16px 8px 24px;
+  font-size: 12px;
+  font-style: bold;
+  color: rgba(21, 27, 57, .6);
+  letter-spacing: 1px;
+}
+
+.logo {
+  padding: 16px 16px 8px 24px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.productsDiv {
+  background-color: white;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+span {
+  color: #007bff;
+}
+
+.paymentDetails {
+  background-color: white;
+  border-radius: 8px;
+  margin-top: 118px;
+}
+
+.paymentDetails .cartPDetails {
+  padding: 16px 24px;
+  color: rgba(21, 27, 57, .6);
+  letter-spacing: 1px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.pDiv {
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #151b39;
+}
+
+#ttt,
+#finalTotal {
+  font-style: bold;
+  font-weight: 700;
+}
+
+.totalSaving {
+  margin: 24px 8px;
+  padding-bottom: 24px;
+}
+
+.totalSaving p {
+  padding: 12px 20px;
+  font-size: 12px;
+  color: #378f30;
+  background: #f3f8ec;
+  font-weight: 700;
+}
+
+.totalCartFinalPrice {
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tLeft {
+  font-size: 10px;
+  color: rgba(21, 27, 57, 0.6);
+  letter-spacing: .83px;
+  font-weight: 700;
+}
+
+.tLeft h1 {
+  font-size: 18px;
+  color: #151b39;
+  margin: 8px 0;
+}
+
+.tRight button {
+  padding: 8px 16px;
+  border: none;
+  background-color: #24aeb1;
+  color: white;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#notes {
+  font-size: 10px;
+  color: rgba(21, 27, 57, .6);
+  font-style: italic;
+  padding: 16px;
+}
+
+#Unavailable{
+  color: rgb(186, 186, 186);
+  letter-spacing: 1px;
+  font-size: 10px;
+}
+@media all and (min-width: 0px) and (max-width: 768px) {
+  .cartMain {
+    display: grid;
+  }
+
+  .cartLeft {
+    width: 100%;
+  }
+
+  .endSec p {
+    order: 2;
+  }
+
+  #cartPrice {
+    margin-top: 16px;
+    margin-bottom: 0;
+  }
+
+  #cartCut {
+    display: none;
+  }
+
+  .cartRight {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .logo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+  }
+
+  #img1 {
+    height: 80px;
+  }
+
+}
+
+.imgLogo img {
+  width: 42px;
+  height: 42px;
+  margin: auto;
+  display: block;
+}
+
+.imgLogo p {
+  font-size: 10px;
+  color: rgba(21, 27, 57, 0.6);
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.logo2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16px;
+  padding-bottom: 16px;
+}
+
+.logo2 img {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.div1 {
+  display: flex;
+  gap: 24px;
+}
+
+.div1 p {
+  margin: auto;
+  font-size: 14px
+}
+
+.div2 {
+  color: #ef4281;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+#radio,
+#radio_cod {
+  margin: auto;
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+}
+
+#cod {
+  margin-top: 10px;
+  font-size: 12px;
+  color: rgba(21, 27, 57, .6);
+}
+
+.button {
+  display: flex;
+  justify-content: end;
+  padding-right: 24px;
+}
+
+#payBtn {
+  display: none;
+  margin-bottom: 16px;
+  border: none;
+  padding: 8px;
+  color: white;
+  background-color: #24aeb1;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#popup_box {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 8px;
+  background: white;
+  padding: 16px;
+}
+
+/**/
+.phonePay {
+  width: 320px;
+  height: 400px;
+}
+
+.phonePay h1 {
+  top: 20;
+  text-align: center;
+  color: #830a96;
+}
+
+.phonePay p {
+  text-align: center;
+  color: #007bff;
+  margin-top: 8px;
+}
+
+.phonePay input {
+  border: none;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  padding: 8px;
+  margin: auto;
+  display: block;
+  margin-top: 60px;
+}
+
+.phonePay button {
+  padding: 8px;
+  margin: auto;
+  display: block;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  background-color: #830a96;
+  margin-top: 24px;
+  cursor: pointer;
+}
+
+#ccc {
+  background-color: red;
+}
+
+.phonePay img {
+  width: 100%;
+}
+
+.phonePay h2 {
+  text-align: center;
+}

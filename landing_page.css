@@ -1,0 +1,677 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lato;
+}
+
+/* ___________________________________________________________________________________________________
+                              Other Three Div Section below top slider
+_____________________________________________________________________________________________________ */
+
+
+
+.other_three_section{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 2% 3%;
+    grid-gap:2%;
+}
+
+.other_three_section > div {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: flex;
+    align-items: center;
+    border-radius: 7px;
+    background-color: white;
+    padding: 20px 10px;
+    cursor: pointer;
+}
+.other_three_section > div img{
+    width: 70%;
+}
+
+.other_section_inner_div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.other_section_inner_div h3 {
+    font-size: 20px;
+    color: rgb(32, 32, 32);
+}
+.other_section_inner_div p {
+    font-size: 14px;
+    line-height: 25px;
+    color: #5ba41c;
+    font-weight: 700;
+}
+
+/* /* ___________________________________________________________________________________________________
+                              Payment Partner Offer Section
+_____________________________________________________________________________________________________ */
+
+.payment_offers{
+    padding: 1px 3%;
+}
+.payment_partner_heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.payment_partner_heading > span:first-of-type{
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.25px;
+    font-weight: 600;
+    color: rgb(32, 32, 32);
+}
+.payment_partner_heading > span:last-of-type{
+    color: #ef4281;
+}
+.offer1{
+    display: flex;
+    max-width: 415px;
+}
+.offer1 > div {
+    border-radius: 7px;
+    margin-top: 5%;
+    background-color: white;
+    display: flex;
+    padding: 10px 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    align-items: center;
+}
+
+.offer1 img {
+    width: 50px;
+    height: 45px;
+    padding-right: 5px;
+    border-right: 1.5px solid rgb(228, 226, 226);
+}
+
+.offer1 p:first-of-type {
+    font-size: 13px;
+    line-height: 25px;
+    padding-left: 3%;
+    font-weight: 600;
+}
+
+.offer1 p:last-of-type{
+    font-size: 11px;
+    line-height: 16px;
+    padding-left: 3%;
+    color: grey;
+}
+
+
+
+
+/* ___________________________________________________________________________________________________
+                             previous order and beauty section
+_____________________________________________________________________________________________________ */
+
+
+.previous_beauty{
+    padding: 10px 1%;
+    display: flex;
+}
+.previous_beauty > div {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 2%;
+    align-items: center;
+}
+
+.previous_beauty > div:first-of-type{
+    border-right: 1.5px solid rgb(218, 214, 214);
+}
+.previous_beauty img {
+    max-height: 120px;
+}
+
+.exp_beauty{
+    font-size: 14px;
+    line-height: 32px;
+    border-radius: 4px;
+    box-shadow: 0 6px 12px 0 rgb(36 174 177 / 40%);
+    text-align: center;
+    letter-spacing: 1px;
+    outline: none;
+    padding: 0px 20px;
+    border: none;
+    background-color: rgb(3, 182, 182);
+    color: white;
+    font-weight: 600;
+    margin-top: 15%;
+    cursor: pointer;
+}
+
+.previous_beauty h2  , p{
+    line-height: 40px;
+}
+.previous_beauty h2{
+    color: rgb(32, 32, 32);
+}
+.prev_orders{
+    display: flex;
+    cursor: pointer;
+    margin-top: 5%;
+    color: #24aeb1;
+    font-weight: 600;
+}
+
+.prev_orders > div {
+    display: flex;
+}
+.prev_orders  img {
+margin-top: 5%;
+}
+
+
+
+/* ___________________________________________________________________________________________________
+                             Trending Today Section
+_____________________________________________________________________________________________________ */
+
+.trending_today_heading{
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.25px;
+    font-weight: 600;
+    color: rgb(32, 32, 32);
+    padding-bottom: 2%;
+    margin-top: 2%;
+}
+.slider_outer_first{
+    padding: 10px 3%;
+}
+.slider_inner_first > div{
+    margin: auto;
+    width: 100%;
+    padding: 0px 10px;
+    overflow: hidden;
+    padding-left: 10PX;
+    padding-right: 10px;
+}
+.slider_inner_first img {
+    width: 96%;
+    height: 190px;
+    border-radius: 10px;
+    margin-right: 1000px;
+}
+
+
+.slick-prev:before,
+.slick-next:before {
+    color:rgb(3, 182, 182) !important; 
+}
+
+
+
+/* ___________________________________________________________________________________________________
+                            Limited Time Deal Section
+_____________________________________________________________________________________________________ */
+
+.limited_time_deal_outer{
+    margin-top: 3%;
+}
+
+.limited_time_deal_inner{
+background: #03b6bb;
+background: -webkit-linear-gradient(top,  #03b6bb 0%,#03b6bb 49%,#f3f7fb 49%,#f3f7fb 49%,#f3f7fb 80%,#f3f7fb 80%);
+background: linear-gradient(to bottom,  #03b6bb 0%,#03b6bb 49%,#f3f7fb 49%,#f3f7fb 49%,#f3f7fb 80%,#f3f7fb 80%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#03b6bb', endColorstr='#f3f7fb',GradientType=0 );
+
+
+    min-height: 180px;
+    top: 0;
+}
+.lmt_heading{
+    display: flex;
+    padding: 2% 0%;
+    padding-bottom: 0px;
+    justify-content: space-between;
+    align-items: center;
+    color: WHITE;
+}
+.lmt_heading p{
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.lmt_heading span{
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.arrow_size{
+    font-size: 12px;
+}
+.lmt_time{
+    display: flex;
+    color: white;
+    font-size: 14px;
+    align-items: center;
+}
+.lmt_time i {
+    margin-right: 0.5%;
+}
+
+.lmt_slider_inner > div  div {
+    margin-top: 0.2%;
+}
+
+.lmt_slider_inner{
+    padding: 0px 20px;
+}
+
+
+.limited_time_deal_inner{
+    padding: 0% 3%;
+    margin-top: 3%;
+}
+
+.lmt_cart1{
+    border-radius: 8px;
+    cursor: pointer;
+    overflow: hidden;
+    padding: 8px;
+}
+
+.cart2chec{
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+.cart2chec > img {
+    width: 95%;
+    margin: auto;
+}
+
+.cart2chec p {
+    color: rgb(60, 59, 59);
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    justify-content: left;
+    padding: 5px 4%;
+}
+
+.slider_price{
+    display: flex;
+    align-items: center;
+    padding: 3% 5%;
+    font-size: 16px;
+}
+.slider_price > sub{
+    text-decoration: line-through;
+    color: grey;
+    font-size: 11px;
+    margin-top: 5px;
+}
+.btn_outer{
+    padding: 5% 4%;
+}
+
+.btn_outer > button{
+    background-color: rgb(3, 182, 182);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: bolder;
+    color: white;
+    letter-spacing: 1px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.slider_off{
+    margin-left: 5%;
+    letter-spacing: 1px;
+    padding-bottom: 15px;
+    color: #5ba41c;
+}
+
+
+/* ___________________________________________________________________________________________________
+                            Shop By Category
+_____________________________________________________________________________________________________ */
+
+.shop_by_category{
+    padding: 2% 3%;
+}
+
+.inner_category_div{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap:20px;
+    margin-top: 1.5%;
+}
+.inner_category_div > div {
+    background-color: white;
+    border-radius: 7px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    transition: 0.2s;
+}
+
+.inner_category_div > div:hover{
+    scale: 1.06;
+    cursor: pointer;
+}
+
+/* ___________________________________________________________________________________________________
+                            Best in Beauty Section
+_____________________________________________________________________________________________________ */
+
+.beauty_section_h4{
+    text-align: center;
+    padding-bottom: 20%;
+    margin-top: 5%;
+    letter-spacing: 1px;
+}
+.beauty_section{
+background: #d63384;
+background: -webkit-linear-gradient(top,  #d63384 0%,#d63384 49%,#f3f7fb 49%,#f3f7fb 49%,#f3f7fb 80%,#f3f7fb 80%);
+background: linear-gradient(to bottom,  #d63384 0%,#d63384 49%,#f3f7fb 49%,#f3f7fb 49%,#f3f7fb 80%,#f3f7fb 80%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d63384', endColorstr='#f3f7fb',GradientType=0 );
+}
+
+
+/* ___________________________________________________________________________________________________
+                            About Netmeds Section
+_____________________________________________________________________________________________________ */
+
+.about_netmeds{
+    margin-top: 5%;
+    padding: 0px 3%;
+}
+.about_netmeds > h4{
+    font-size: 19px;
+}
+.about_netmeds > p{
+    line-height: 20px;
+    font-size: 0.9rem;
+    color: rgb(67, 65, 65);
+}
+.about_netmeds > p:first-of-type{
+    margin-top: 1%;
+}
+
+
+
+/* ___________________________________________________________________________________________________
+                            Footer Section
+_____________________________________________________________________________________________________ */
+
+
+footer{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-top: 5%;
+    padding: 0px 3%;
+    background-color: white;
+}
+.footer_first{
+    padding: 1% 0px;
+    display: flex;
+    border-bottom: 1.5px solid rgb(186, 184, 184);
+}
+.footer_first > div:first-of-type{
+    width: 20%;
+}
+.footer_first > div:last-of-type{
+    width: 70%;
+    margin-left: 5%;
+}
+.footer_first p {
+    line-height: 30px;
+    color: rgb(167, 164, 164);
+    font-weight: bold;
+}
+
+.footer_second{
+    border-bottom: 1.5px solid rgb(186, 184, 184);
+    padding-top: 3%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding-bottom: 5%;
+}
+.footer_second > div > h5{
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.footer_second > div ul {
+    list-style: none;
+    margin-top: 5%;
+}
+
+.footer_second > div ul li{
+    margin-top: 4%;
+    font-size: 14px;
+    color: rgb(48, 47, 47);
+}
+
+.footer_second > div ul li:hover{
+    color: #03b6bb;
+    cursor: pointer;
+}
+
+
+
+.footer_last_offer{
+    line-height: 20px;
+    margin-top: 5%;
+    color: rgb(73, 72, 72);
+    font-size: 16px;
+}
+
+.nws_div{
+    margin-top: 5%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1.5px solid rgb(194, 192, 192);
+    padding-bottom: 0px;
+}
+.nws_div > input{
+    padding: 10px;
+    width: 90%;
+    border: none;
+    outline: none;
+}
+.nws_div i {
+    font-size: 20px;
+    color: #03b6bb
+    ;
+}
+
+.app_download{
+    padding-left: 5%;
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.app_download > div{
+    width: 50%;
+}
+
+.app_download img{
+    width: 90%;
+    cursor: pointer;
+}
+
+.footer_third ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 0px;
+}
+
+.footer_third ul li:hover{
+    color: #24aeb1;
+    cursor: pointer;
+}
+.footer_third ul li{
+    font-weight: 700;
+    color: grey;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+/* Media query For Tablets............................................................... */
+
+@media (max-width:886px){
+    
+    .other_three_section{
+        padding: 2% 1%;
+        grid-gap:1%;
+    }
+
+    .previous_beauty{
+        padding: 10px 0%;
+    }
+    .previous_beauty > div {
+        width: 50%;
+    }
+
+    .previous_beauty img {
+        max-height: 100px;
+    }
+    
+    .exp_beauty{
+        font-size: 14px;
+        line-height: 32px;
+        letter-spacing: 0.25px;
+    }
+    
+    .previous_beauty h2  , p{
+        line-height: 30px;
+        font-size: 14px
+    }
+    .previous_beauty h2{
+        font-size: 22px;
+    }
+
+    .inner_category_div{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .inner_category_div > div:last-of-type{
+        display: none;
+    }
+    .tab-res_footer{
+        display: none;
+    }
+
+    .footer_first{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .footer_first > div:first-of-type{
+        align-items: center;
+        width: 100%;
+    }
+    .footer_first > div:last-of-type{
+        width: 100%;
+        margin-left: 0%;
+    }
+    .footer_first p {
+        line-height: 25px;
+    }
+    .footer_last_offer{
+        line-height: 16px;
+        font-size: 14px;
+    }
+
+}
+
+/* Media query For Phones............................................................... */
+
+@media (max-width: 480px){
+   
+    .other_three_section{
+    display: block;
+    padding: 2% 3%;
+    grid-gap:2%;
+    }
+    .other_three_section > div:last-of-type , .other_three_section > div:first-of-type{
+        display: none;
+    }
+
+    .payment_offers{
+        display: none;
+    }
+
+
+
+    .previous_beauty{
+        padding: 10px 1%;
+    }
+    .previous_beauty > div:last-of-type{
+        display: none;
+    }
+    .previous_beauty > div:first-of-type{
+        width: 100%;
+        border-right: none;
+    }
+
+    .inner_category_div{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .inner_category_div > div:last-of-type{
+        display: none;
+    }
+    .footer_first p {
+        line-height: 20px;
+        font-size: 12px;
+    }
+
+    .mob_res_footer{
+        display: none;
+    }
+    .footer_second{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .footer_last_offer{
+        line-height: 16px;
+        font-size: 12px;
+    }
+
+    .footer_second > div > h5{
+        font-weight: bold;
+        font-size: 14px;
+    }
+    .mbb_res_last_footer{
+        display: none;
+    }
+    .mob_res_last{
+        margin: auto;
+        padding: 10px;
+    } 
+}

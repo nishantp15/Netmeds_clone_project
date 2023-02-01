@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Lato;
+}
+.Lower_section , .res_cat_list , .res_search{
+  display: none;
+}
+
+.login_container {
+  padding: 2% 9%;
+}
+.login_content {
+  background-color: white;
+  border-radius: 17px;
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.left_side_container {
+  width: 45%;
+}
+.right_side_container {
+  width: 47%;
+}
+#right_first > h2 {
+  font-size: 26px;
+  color: #151b39;
+  line-height: 36px;
+  font: 300;
+  margin-top: 10%;
+}
+.left_side_container > img {
+  height: 100%;
+  width: 100%;
+}
+#right_first > p {
+  color: #868686;
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 10px;
+}
+#right_first > div {
+  margin-top: 10%;
+}
+#right_first > div > p {
+  font-size: 11px;
+  color: rgb(6, 191, 191);
+  font-weight: 900;
+}
+.number_field {
+  width: 80%;
+  border-bottom: 2px solid rgb(242, 241, 241);
+}
+.number_field > input {
+  padding: 8px;
+  border: none;
+  outline: none;
+  width: 80%;
+  font-size: 16px;
+}
+input::placeholder {
+  color: rgb(207, 206, 206);
+  opacity: 1;
+}
+#use_otp,
+#verify,
+#login_btn {
+  background-color: rgb(6, 191, 191);
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 600;
+  color: white;
+  border: none;
+  width: 80%;
+  padding: 8px;
+  border-radius: 5px;
+  margin-top: 5%;
+  cursor: pointer;
+}
+.social_buttons {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+}
+.social_buttons > button {
+  margin-top: 10px;
+  width: 40%;
+  padding: 10px 20px;
+  background: none;
+  border-radius: 5px;
+  border: 1px solid grey;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+.details_section {
+  display: none;
+  margin-top: 5%;
+}
+.details_section > div {
+  width: 80%;
+  margin-top: 20px;
+}
+
+.details_section > div > p {
+  font-size: 11px;
+  color: rgb(6, 191, 191);
+  font-weight: 900;
+}
+.details_section > div input {
+  padding: 8px 0px;
+  border: none;
+  border-bottom: 2px solid rgb(242, 241, 241);
+  width: 100%;
+  outline: none;
+}
+
+.verify_number {
+  color: rgb(48, 46, 46) !important;
+  font-size: 18px;
+  margin-top: 25px;
+  font-weight: 500 !important;
+  letter-spacing: 1px;
+}
+.change {
+  display: flex;
+  justify-content: space-between;
+}
+
+.change > p {
+  color: rgb(48, 46, 46) !important;
+  font-size: 18px;
+}
+.change > p > span:first-of-type {
+  color: #868686;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 12px;
+}
+.change > span {
+  color: red;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.otp_boxes {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px;
+}
+.otp_boxes > input {
+  border: 0.1px solid black !important;
+  width: 11% !important;
+  height: 50% !important;
+  background-color: #ededed4c;
+  border-radius: 1px;
+  padding: 10px;
+  display: flex;
+  justify-content: cetner;
+  text-align: center;
+  font-size: 18px;
+}
+
+#loading,
+#verified,
+#wrong {
+  display: none;
+}
+
+#loading_container {
+  width: 100%;
+  height: 100%;
+  margin-top: 30%;
+  margin-left: 20%;
+}
+
+#verified > img,
+#wrong > img {
+  margin: auto;
+  width: 50%;
+  margin-top: 30%;
+  margin-left: 15%;
+}
+
+#login_otp_verify {
+  padding: 40px 20px;
+}
+.login_p {
+  margin-top: 2%;
+  color: #868686;
+  font-size: 0.9em;
+}
+.login_timer {
+  width: 60%;
+  margin-top: 5%;
+}
+.login_timer span {
+  font-size: 13px;
+}
+.login_timer p {
+  font-size: 13px;
+}
+
+@media screen and (max-width: 923px) {
+  .left_side_container {
+    width: 0px;
+  }
+
+  .right_side_container {
+    width: 100%;
+    padding: 0% 10%;
+  }
+}
+
+@media screen and (max-width: 523px) {
+  #right_first > p {
+    font-size: 13px;
+  }
+}

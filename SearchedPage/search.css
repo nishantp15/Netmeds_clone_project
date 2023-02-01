@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lato;
+}
+
+.section_B .footer_lists h4:not(.subscribe h4) {
+    margin-left: 8px;
+}
+
+#noFound {
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 600;
+    color: red;
+    padding: 16px 24px;
+}
+
+body {
+    background-color: #f3f3f3;
+}
+
+.mainContainer {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.mainContainer .filter {
+    padding: 14px 24px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #6f7284;
+}
+
+.right {
+    width: 55%;
+}
+
+.left {
+    width: 25%;
+}
+
+.left .div1 {
+    border-radius: 8px;
+    padding: 16px 24px;
+    margin-top: 55px;
+    background: #fff url("https://www.netmeds.com/assets/version1663621997/gloryweb/images/refill-illustration.png") top right no-repeat;
+}
+
+.left .div2 {
+    border-radius: 8px;
+    padding: 16px 24px;
+    margin-top: 16px;
+    background: #fff url("https://www.netmeds.com/assets/version1663621997/gloryweb/images/don_t_have_a_prescription.png") no-repeat top right/110px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 16px 24px;
+    display: flex;
+    gap: 16px;
+    margin-top: 10px;
+}
+
+.card div:nth-child(1) {
+    width: 100%;
+}
+
+.card img {
+    width: 75px;
+    height: 75px;
+}
+
+.details {
+    width: 100%;
+}
+
+.details #title {
+    word-break: break-word;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-family: Lato, bold;
+    float: left;
+    width: 100%;
+    margin-left: 0;
+    text-transform: capitalize;
+    color: #151b39;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.details #category {
+    background: #f6f6f7;
+    border-radius: 2px;
+    padding: 0 5px;
+    font-size: 12px;
+    color: #6f7284;
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: 400;
+    width: min-content;
+}
+
+#price {
+    font-size: 14px;
+    color: #6f7284;
+    font-weight: 600;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 8px 0;
+}
+
+#bestprice {
+    color: #ef4281;
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    padding-left: 5px;
+}
+
+.details #brand {
+    font-size: 12px;
+    font-style: italic;
+    color: #6f7284;
+    font-weight: 400;
+}
+
+.end {
+    display: flex;
+    justify-content: end;
+}
+
+.end button {
+    background-color: #24aeb1;
+    border-radius: 4px;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    font-family: Lato, bold;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 33px;
+    padding: 6px 15px 2px 15px;
+    text-transform: uppercase;
+    margin: 4px;
+    text-align: end;
+}
+
+.div1 p:nth-child(1) {
+    color: #6f7284;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 0;
+}
+
+.div1 #length {
+    color: #151b39;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid #0000001a;
+    border-top-color: rgba(0, 0, 0, 0.1);
+}
+
+.div1 #checkout {
+    color: #0b7e81;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.div2 p:nth-child(1) {
+    font-size: 12px;
+    font-weight: 600;
+    color: #6f7284;
+    letter-spacing: 1px;
+    padding: 4px 0;
+}
+
+.div2 p:nth-child(2) {
+    font-size: 20px;
+    font-weight: 400;
+    color: #151b39;
+    letter-spacing: 1px;
+    padding: 4px 0;
+}
+
+.div2 p:nth-child(3) {
+    font-size: 12px;
+    font-weight: 400;
+    color: #6f7284;
+    letter-spacing: 1px;
+    padding: 4px 0;
+    padding-right: 16px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    width: auto;
+}
+
+.div2 .order {
+    background: url("https://www.netmeds.com/assets/version1663621997/gloryweb/images/icons/flash.svg") no-repeat left center;
+    background-size: 32px;
+    color: #ef4281;
+    padding-left: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.div2 .order>p {
+    color: #ef4281;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 4px;
+}
+
+.div2 .order>button {
+    padding: 2px 8px;
+    color: #6f7284;
+    border: none;
+    border-radius: 2px;
+    font-size: 14px;
+}
+
+#btnFlex {
+    display: flex;
+    gap: 16px;
+    display: none;
+}
+
+#plus,
+#minus {
+    cursor: pointer;
+}
+
+@media all and (min-width: 0px) and (max-width: 499px) {
+    .right {
+        order: 1;
+        width: 100%;
+    }
+
+    .mainContainer {
+        display: grid;
+        margin: 8px;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .left .div1 {
+        width: 100%;
+        align-items: center;
+        margin-top: 16px;
+    }
+
+    .left .div2 {
+        display: none;
+    }
+
+    .right .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .card {
+        padding: 8px;
+        display: grid;
+        width: 100%
+    }
+
+    #title {
+        height: 96px;
+    }
+
+    #brand {
+        height: 29px;
+    }
+
+    .card img {
+        width: 126px;
+        height: 126px;
+        margin: auto;
+        display: block;
+    }
+
+    .details .end {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        vertical-align: bottom;
+    }
+
+    #price {
+        margin-top: 8px;
+        padding: 0;
+    }
+
+    #brand {
+        font-size: 10px;
+    }
+
+    .end button {
+        width: 100%;
+        background-color: #24aeb1;
+        border-radius: 4px;
+        border: 0;
+        color: #fff;
+        cursor: pointer;
+        font-family: Lato, bold;
+        font-weight: 700;
+        font-size: 14px;
+        text-align: center;
+        line-height: normal;
+        vertical-align: bottom;
+    }
+
+    #btnFlex {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        display: none;
+    }
+
+    .details #category {
+        white-space: initial;
+    }
+}
+
+@media all and (min-width: 500px) and (max-width: 898px) {
+    .right {
+        order: 1;
+        width: 100%;
+    }
+
+    .mainContainer {
+        display: grid;
+        margin: 8px;
+    }
+
+    .left {
+        width: 100%;
+        display: flex;
+    }
+
+    .left .div1 {
+        width: 50%;
+        align-items: flex-start;
+        margin-top: 16px;
+    }
+
+    .left .div2 {
+        display: none;
+    }
+
+    #btnFlex {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        display: none;
+    }
+}

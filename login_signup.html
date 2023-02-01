@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NetMeds Sign In / Sign Up</title>
+    <script src="https://kit.fontawesome.com/5fa36d54c1.js" crossorigin="anonymous"></script>
+    <link
+      rel="shortcut icon"
+      href="https://www.netmeds.com/assets/gloryweb/favicon.png"
+      type="image/png"
+    />
+    <!-- navbar css -->
+    <link rel="stylesheet" href="index.css">
+    <!-- <link rel="stylesheet" href="styles/navbar.css" /> -->
+
+    <!-- login_sigup css -->
+    <link rel="stylesheet" href="./styles/login_signup.css" />
+    <style>
+      .Lower_section {
+        display: none;
+      }
+
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav id="main_navbar">
+
+
+    </nav>
+
+    <!-- main body section -->
+    <div class="login_container" style="margin-top: 70px;">
+      <div class="login_content">
+        <div class="left_side_container">
+          <img
+            src="https://www.netmeds.com/images/cms/wysiwyg/cms/1588773798_sign-in-banner-new.png"
+            alt="Not found"
+          />
+        </div>
+
+        <div class="right_side_container">
+          <div id="right_first">
+            <h2>Sign In / Sign Up</h2>
+            <p>
+              Sign up or Sign in to access your orders, special offers, <br />
+              health tips and more!
+            </p>
+
+            <div>
+              <p>PHONE NUMBER</p>
+              <div class="number_field">
+                <b>+91 |</b>
+                <input
+                  type="number"
+                  placeholder="Enter your mobile no"
+                  id="mobile_number"
+                />
+              </div>
+            </div>
+
+            <button id="use_otp">USE OTP</button>
+
+            <div id="login_otp"></div>
+            <div class="social_buttons">
+              <button>
+                <img src="img/google.png" alt="not found" /> Google
+              </button>
+              <button>
+                <img src="img/facebook.png" alt="not found" />Facebook
+              </button>
+            </div>
+          </div>
+
+          <div id="loading_container">
+            <div id="loading">
+              <img src="img/icons8-spinner.gif" alt="not found" / >
+            </div>
+          </div>
+
+          <div class="details_section" id="cheking">
+            <h2>Create Account</h2>
+
+            <div>
+              <p>EMAIL ID</p>
+              <input
+                type="email"
+                placeholder="Enter your Email Id"
+                id="email"
+              />
+            </div>
+
+            <div>
+              <p>FIRST NAME</p>
+              <input type="text" placeholder="Your First Name" id="fname" />
+            </div>
+
+            <div>
+              <p>LAST NAME</p>
+              <input
+                type="text"
+                placeholder="Enter your Last Name"
+                id="lname"
+              />
+            </div>
+
+            <p class="verify_number">VERIFYING NUMBER</p>
+
+            <div class="change">
+              <p>
+                <span> We have sent 6 digit OTP on </span>+91-
+                <span id="local_num"></span>
+              </p>
+              <span id="change_button">Change</span>
+            </div>
+
+            <div class="otp_boxes">
+              <input type="number" maxlength="1" id="input_one" />
+              <input type="number" maxlength="1" id="input_two" />
+              <input type="number" maxlength="1" id="input_three" />
+              <input type="number" maxlength="1" id="input_four" />
+              <input type="number" maxlength="1" id="input_five" />
+              <input type="number" maxlength="1" id="input_six" />
+            </div>
+
+            <div class="change">
+              <p id="waiting_otp">
+                <span> Waiting for OTP... </span
+                ><span id="otp_time">60</span> Sec
+              </p>
+            </div>
+
+            <button id="verify">VERIFY</button>
+          </div>
+
+          <div id="verified_container">
+            <div id="verified">
+              <img src="img/shield.gif" alt="not found" / >
+            </div>
+          </div>
+
+          <div id="wrong"><img src="img/cross.png" alt="Error" /></div>
+
+          <div id="login_otp_verify">
+            <h1>Hi , <span id="login_name"></span></h1>
+
+            <p class="login_p">
+              Please Enter otp sent to your registered mobile.....
+            </p>
+
+            <div class="change" style="margin-top: 10%">
+              <p>
+                <span> We have sent 6 digit OTP on </span>+91-
+                <span id="local_num2"></span>
+              </p>
+            </div>
+
+            <div class="otp_boxes" style="margin-top: 5%; padding-right: 25%">
+              <input type="number" maxlength="1" id="input_one1" />
+              <input type="number" maxlength="1" id="input_two2" />
+              <input type="number" maxlength="1" id="input_three3" />
+              <input type="number" maxlength="1" id="input_four4" />
+              <input type="number" maxlength="1" id="input_five5" />
+              <input type="number" maxlength="1" id="input_six6" />
+            </div>
+
+            <div class="change login_timer">
+              <p id="waiting_otp2">
+                <span> Waiting for OTP... </span
+                ><span id="otp_time2">60</span> Sec
+              </p>
+            </div>
+
+            <button id="login_btn">Login</button>
+
+            <br /><br />
+            <div class="social_buttons">
+              <button>
+                <img src="img/google.png" alt="not found" /> Google
+              </button>
+              <button>
+                <img src="img/facebook.png" alt="not found" />Facebook
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- script -->
+    <script type="module" src="./scripts/login_signup.js"></script>
+  </body>
+</html>

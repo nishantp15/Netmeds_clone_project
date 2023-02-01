@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <link  href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+	</script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js">
+	</script>
+
+    <link rel="stylesheet" href="pay.css">
+    <title>Payment</title>
+    <link rel="shortcut icon" href="https://www.netmeds.com/assets/gloryweb/favicon.png" type="image/png"/>
+  </head>
+  <body>
+    <div id="container"><img src="https://github.com/lalitk1997/Construct-Project-Netmeds.com/blob/main/Himayun%20khan/Image/payment2.JPG?raw=true" alt="" /></div>
+    <div id="bag">
+      <div id="bag1">
+        <!-- <div id="bag12">
+          <p>PRODUCTS</p>
+
+          <div id="cartdata"></div>
+
+          <div class="addmore">
+            <a href="products.html"><button>ADD MORE ITEMS</button></a>
+            <a href="products.html"><button>+</button></a>
+          </div>
+        </div> -->
+        <div id="bag16">
+            <input type="checkbox"/>
+            <p>VOUCHERS</p>
+        </div>
+        <div id="bag13">
+            <div id="bag131">
+              <p>UPI</p>
+            </div>
+            <div id="bag132">
+              <div id="bag1321">
+                  <img src="https://www.netmeds.com/assets/pgicon/googlepaylogo.png"/>
+                  <p>Google Pay</p>
+              </div>
+              <input id="check1" type="checkbox"/>
+            </div>
+            <div id="bag133">
+              <button id="pay1">Pay<p id="total1">Rs.1,459.11</p></button>
+            </div>
+          </div>
+          <div id="bag13">
+            <div id="bag131">
+              <p>NET BANKING</p>
+            </div>
+            <div id="bag142">
+              <div id="bag1421">
+                  <img src="https://www.netmeds.com/assets/pgicon/axis.png"/>
+                  <p>Axis Bank</p>
+              </div>
+              <div id="bag1421">
+                <img src="https://www.netmeds.com/assets/pgicon/Hdfc.png"/>
+                <p>HDFC Bank</p>
+            </div>
+            <div id="bag1421">
+                <img src="https://www.netmeds.com/assets/pgicon/icici.png"/>
+                <p>ICICI NetBanking</p>
+            </div>
+            <div id="bag1421">
+                <img src="https://www.netmeds.com/assets/pgicon/kotak.png"/>
+                <p>Kotak Bank</p>
+            </div>
+            <div id="bag1421">
+                <img src="https://www.netmeds.com/assets/pgicon/Sbi.png"/>
+                <p>State Bank of India</p>
+            </div>
+            </div>
+            <div id="bag143">
+              <select>
+                <option value="">MORE BANKS</option>
+                <option value="">Axis Bank</option>
+                <option value="">Indian Bank</option>
+                <option value="">Union Bank</option>
+                <option value="">Canara Bank</option>
+                <option value="">Yes Bank</option>
+              </select>
+            </div>
+          </div>
+          <div id="bag15">
+            <div id="bag151">
+              <p>CREDIT & DEBIT CARDS</p>
+            </div>
+            <hr>
+            <p>ADD NEW CARD</p>
+          </div>
+        <div id="bag13">
+            <div id="bag131">
+              <p>PRFERRED PAYMENT</p>
+            </div>
+            <div id="bag132">
+              <div id="bag1321">
+                  <img src="https://www.netmeds.com/assets/pgicon/Paytm_lo.png"/>
+                  <p>Paytm</p>
+              </div>
+              <input id="check2" type="checkbox"/>
+            </div>
+            <div id="bag133">
+              <button id="pay2">Pay<p id="total2">Rs.1,459.11</p></button>
+            </div>
+          </div>
+
+        <div id="bag13">
+          <div id="bag131">
+            <p>OTHER PAYMENTS</p>
+          </div>
+          <div id="bag132">
+            <div id="bag1321">
+                <img src="https://www.netmeds.com/assets/pgicon/Phone_Pay_lo.png"/>
+                <p>PhonePe</p>
+            </div>
+            <input id="check3" type="checkbox"/>
+          </div>
+          <div id="bag133">
+            <button id="pay3">Pay<p id="total3">Rs.1,459.11</p></button>
+          </div>
+        </div>
+        <div id="bag13">
+            <div id="bag131">
+              <p></p>
+            </div>
+            <div id="bag132">
+              <div id="bag1321">
+                  <img src="https://www.netmeds.com/assets/pgicon/COD.png"/>
+                  <p>Cash on Delivery</p>
+              </div>
+              <input id="check4" type="checkbox"/>
+            </div>
+            <div id="bag133">
+              <button id="pay4">Pay<p id="total4">Rs.1,459.11</p></button>
+            </div>
+        </div>
+        <div id="bag13">
+            <div id="bag131">
+              <p>REWARD PAY</p>
+            </div>
+            <div id="bag132">
+              <div id="bag1321">
+                  <img src="https://www.netmeds.com/msassets/images/icons/TWID.png"/>
+                  <p>Pay With Rewards</p>
+              </div>
+              <input id="check5" type="checkbox"/>
+            </div>
+            <div id="bag133">
+              <button id="pay5">Pay<p id="total5">Rs.1,459.11</p></button>
+            </div>
+          </div>
+
+        <!-- <div id="bag13">
+          <p>CUSTOMER NOTES</p>
+          <input type="textarea" />
+        </div> -->
+      </div>
+
+      <div id="bag2">
+        <div id="bag23">
+          <div id="pding">
+            <div>
+              <h4>PAYMENT DETAILS</h4>
+            </div>
+
+            <div>
+              <div id="price">
+                <span>MRP Total</span> <span id="MRP">₹ 0</span>
+              </div>
+              <div id="price">
+                <span>Netmeds Discount</span>
+                <span id="netmeddiscount">- Rs.84.89</span>
+              </div>
+              <div id="price">
+                <span>Total Amount *</span> <span id="total">Rs.1,459.11</span>
+              </div>
+            </div>
+
+            <div id="saving">TOTAL SAVINGS <span id="netmed">₹.0</span></div>
+
+            <div id="amount">
+              <div>
+                <p>TOTAL AMOUNT</p>
+                <p id="total0">Rs.1,459.11</p>
+              </div>
+              <!-- <div>
+                <button id="pdone">PAY</button>
+              </div> -->
+            </div>
+          </div>
+        </div>
+
+        <div id="bag24">
+          <div>
+            <p>
+              IMPORTANT UPDATE : Due to the current Covid 19 situation, we
+              cannot commit to our mentioned delivery dates. We are working hard
+              to meet the unprecedented demand and we thank you for your
+              patience.
+            </p>
+            <p>
+              Netmeds is a technology platform to facilitate transaction of
+              business. The products and services are offered for sale by the
+              sellers. The user authorizes the delivery personnel to be his
+              agent for delivery of the goods. For details read
+              <span>Terms & Conditions.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script src="pay.js"></script>
