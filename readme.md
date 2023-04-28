@@ -4,6 +4,8 @@
 
 <p>At netmeds.com, we make a wide range of prescription medicines and other health products conveniently available all across India. Even second and third tier cities and rural villages can now have access to the latest medicines. Since we also offer generic alternatives to most medicines, online buyers can expect significant savings.</p>
 
+<h3>Live Demo</h3> <a href="https://symphonious-cucurucho-322130.netlify.app/">https://symphonious-cucurucho-322130.netlify.app/</a>
+
 <br>
 
 <div align="center">
